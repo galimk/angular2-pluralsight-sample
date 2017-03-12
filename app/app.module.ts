@@ -13,12 +13,13 @@ import {RouterModule} from "@angular/router";
 import {Error404Component} from './events/errors/404.component';
 import {EventRouteActivator} from './events/event-details/event-route-activator.service';
 import {EventListResolver} from './events/event-list-resolver.service'
+import {AuthService} from './user/AuthService'
 
 @NgModule({
     imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
     declarations: [EventsAppComponent, EventsListComponent, EventThumbnailComponent, NavBarComponent, EventDetailsComponent,
         CreateEventComponent, Error404Component],
-    providers: [EventService, ToastrService, EventRouteActivator,EventListResolver],
+    providers: [EventService, ToastrService, EventRouteActivator, EventListResolver, AuthService],
     bootstrap: [EventsAppComponent]
 })
 export class AppModule {
