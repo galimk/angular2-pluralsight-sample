@@ -3,7 +3,7 @@ import {AuthService} from '../AuthService';
 import {Router} from '@angular/router';
 
 @Component({
-    templateUrl: 'app/user/login/LoginTemplate.html',
+    templateUrl: 'app/user/login/LoginComponent.html',
     styles: [`
         em { float:right; color: #E05C65; padding-left:10px; }
     `]

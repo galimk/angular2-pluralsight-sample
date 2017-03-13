@@ -1,4 +1,4 @@
-import {ProfileComponent} from './profile.component';
+import {ProfileComponent} from './profile/ProfileComponent';
 import {LoginComponent} from './login/LoginComponent';
 
 export const userRoutes = [
